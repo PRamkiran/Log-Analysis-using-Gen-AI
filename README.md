@@ -1,6 +1,6 @@
 # Log Analysis using GenAI
 
-CDoc empowers you to have a conversation with your documents using local large language models (LLMs) and the power of Ollama, ChromaDB, and LangChain.
+Developed an AI system that uses Generative AI to detect anomalies, extract insights, and summarize log data. Implemented data preprocessing, log parsing, and AI-driven pattern recognition to enhance monitoring and troubleshooting efficiency. Utilized technologies like Python, NLP, LLM (LLaMA), ChromaDb, Streamlit, LangChain for scalable log processing
 
 **Key Features:**
 
