@@ -1,4 +1,4 @@
-# CDoc: Chat with Your Document
+# Log Analysis using GenAI
 
 CDoc empowers you to have a conversation with your documents using local large language models (LLMs) and the power of Ollama, ChromaDB, and LangChain.
 
@@ -28,12 +28,12 @@ CDoc empowers you to have a conversation with your documents using local large l
 1. **Clone the repository:**
 
    ```
-   git clone https://github.com/ChatDocDev/CDoc
+   git clone https://github.com/PRamkiran/Log-Analysis-using-Gen-AI
    ```
 2. **Navigate to the project directory:**
 
    ```
-   cd CDoc
+   cd Log-Analysis-using-Gen-AI
    ```
 
 3. Open project directory in VSCode
