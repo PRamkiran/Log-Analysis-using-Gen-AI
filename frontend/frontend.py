@@ -55,9 +55,12 @@ st.sidebar.header("Upload and Select File(s)")
 # Streamlit form for file uploads
 with st.sidebar.form(key='upload_form',clear_on_submit=True):
     """
-    Streamlit form for uploading files.
+    Upload the files here.
     """
     uploaded_files = st.file_uploader("Upload a file(s)", type=['pdf', 'docx', 'txt', 'csv', 'xlsx'], accept_multiple_files=True)
+    """
+    Click the upload button below.
+    """
     submit_button = st.form_submit_button(label='Upload')
 
 # Handle file uploads
@@ -127,16 +130,16 @@ if st.session_state.file_names:
 if st.session_state.file_names:
     file_names_list = [file['name'] for file in st.session_state.file_names if file["name"] not in st.session_state.deleted_files]
     selected_files = st.sidebar.multiselect(
-        "Select file(s)",
+        "Select One and More files for Analysis.",
         options=file_names_list
     )
     st.session_state['selected_files'] = selected_files
 
 # Display chat history using st.chat_message
-st.subheader("CDOC: Chat with your Documents")
+st.subheader("Log Analysis using GenAI")
 for msg in st.session_state.chat_history:
     """
-    Display chat history with messages from the user and the assistant.
+    Show user and assistant messages.
     """
     with st.chat_message(msg['role']):
         st.markdown(msg['content'])
